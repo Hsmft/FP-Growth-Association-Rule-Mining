@@ -1,0 +1,164 @@
+relationship_Husband
+relationship_Husband -> marital-status_Married-civ-spouse
+relationship_Husband -> marital-status_Married-civ-spouse -> sex_Male
+relationship_Husband -> sex_Male
+marital-status_Married-civ-spouse
+capital-gain <= 2000.00 -> marital-status_Married-civ-spouse
+marital-status_Married-civ-spouse -> sex_Male
+race_White -> marital-status_Married-civ-spouse
+native-country_United-States -> marital-status_Married-civ-spouse
+marital-status_Married-civ-spouse -> capital-loss <= 900.00
+8.50 < education-num <= 10.38
+8.50 < education-num <= 10.38 -> workclass_Private
+8.50 < education-num <= 10.38 -> workclass_Private -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> capital-loss <= 900.00 -> workclass_Private
+8.50 < education-num <= 10.38 -> income_<=50K
+8.50 < education-num <= 10.38 -> income_<=50K -> native-country_United-States
+8.50 < education-num <= 10.38 -> income_<=50K -> native-country_United-States -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> income_<=50K -> native-country_United-States -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> income_<=50K -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> income_<=50K -> capital-loss <= 900.00 -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> income_<=50K -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> race_White
+8.50 < education-num <= 10.38 -> race_White -> capital-gain <= 2000.00
+native-country_United-States -> 8.50 < education-num <= 10.38 -> race_White -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> race_White -> capital-gain <= 2000.00 -> capital-loss <= 900.00
+native-country_United-States -> 8.50 < education-num <= 10.38 -> race_White
+native-country_United-States -> 8.50 < education-num <= 10.38 -> race_White -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> race_White -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> native-country_United-States
+8.50 < education-num <= 10.38 -> native-country_United-States -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> native-country_United-States -> capital-gain <= 2000.00 -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> native-country_United-States -> capital-loss <= 900.00
+8.50 < education-num <= 10.38 -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> capital-loss <= 900.00 -> capital-gain <= 2000.00
+8.50 < education-num <= 10.38 -> capital-loss <= 900.00
+20.60 < hours-per-week <= 40.20
+20.60 < hours-per-week <= 40.20 -> workclass_Private
+income_<=50K -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+capital-gain <= 2000.00 -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+capital-loss <= 900.00 -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+capital-gain <= 2000.00 -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+capital-gain <= 2000.00 -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20 -> workclass_Private
+income_<=50K -> 20.60 < hours-per-week <= 40.20
+race_White -> income_<=50K -> 20.60 < hours-per-week <= 40.20
+income_<=50K -> native-country_United-States -> 20.60 < hours-per-week <= 40.20
+capital-gain <= 2000.00 -> income_<=50K -> native-country_United-States -> 20.60 < hours-per-week <= 40.20
+income_<=50K -> native-country_United-States -> capital-gain <= 2000.00 -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+income_<=50K -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> capital-loss <= 900.00
+capital-gain <= 2000.00 -> income_<=50K -> 20.60 < hours-per-week <= 40.20
+capital-gain <= 2000.00 -> income_<=50K -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+income_<=50K -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+race_White -> 20.60 < hours-per-week <= 40.20
+race_White -> native-country_United-States -> 20.60 < hours-per-week <= 40.20
+race_White -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> capital-gain <= 2000.00
+native-country_United-States -> race_White -> capital-gain <= 2000.00 -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+race_White -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> capital-loss <= 900.00
+race_White -> 20.60 < hours-per-week <= 40.20 -> capital-gain <= 2000.00
+race_White -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20 -> capital-gain <= 2000.00
+race_White -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+native-country_United-States -> 20.60 < hours-per-week <= 40.20
+capital-gain <= 2000.00 -> native-country_United-States -> 20.60 < hours-per-week <= 40.20
+capital-gain <= 2000.00 -> native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> capital-loss <= 900.00
+native-country_United-States -> 20.60 < hours-per-week <= 40.20 -> capital-loss <= 900.00
+capital-gain <= 2000.00 -> 20.60 < hours-per-week <= 40.20
+capital-gain <= 2000.00 -> capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+capital-loss <= 900.00 -> 20.60 < hours-per-week <= 40.20
+sex_Male
+income_<=50K -> sex_Male
+race_White -> income_<=50K -> sex_Male
+income_<=50K -> native-country_United-States -> sex_Male
+capital-gain <= 2000.00 -> income_<=50K -> native-country_United-States -> sex_Male
+capital-loss <= 900.00 -> income_<=50K -> native-country_United-States -> sex_Male
+capital-gain <= 2000.00 -> income_<=50K -> sex_Male
+capital-gain <= 2000.00 -> income_<=50K -> capital-loss <= 900.00 -> sex_Male
+income_<=50K -> capital-loss <= 900.00 -> sex_Male
+workclass_Private -> sex_Male
+race_White -> workclass_Private -> sex_Male
+race_White -> capital-loss <= 900.00 -> workclass_Private -> sex_Male
+native-country_United-States -> workclass_Private -> sex_Male
+capital-gain <= 2000.00 -> native-country_United-States -> workclass_Private -> sex_Male
+capital-loss <= 900.00 -> native-country_United-States -> workclass_Private -> sex_Male
+capital-gain <= 2000.00 -> workclass_Private -> sex_Male
+capital-gain <= 2000.00 -> capital-loss <= 900.00 -> workclass_Private -> sex_Male
+capital-loss <= 900.00 -> workclass_Private -> sex_Male
+race_White -> sex_Male
+race_White -> capital-gain <= 2000.00 -> sex_Male
+race_White -> native-country_United-States -> capital-gain <= 2000.00 -> sex_Male
+native-country_United-States -> race_White -> sex_Male -> capital-gain <= 2000.00 -> capital-loss <= 900.00
+race_White -> capital-loss <= 900.00 -> capital-gain <= 2000.00 -> sex_Male
+race_White -> native-country_United-States -> sex_Male
+capital-loss <= 900.00 -> race_White -> native-country_United-States -> sex_Male
+race_White -> capital-loss <= 900.00 -> sex_Male
+capital-gain <= 2000.00 -> sex_Male
+capital-gain <= 2000.00 -> native-country_United-States -> sex_Male
+capital-loss <= 900.00 -> capital-gain <= 2000.00 -> native-country_United-States -> sex_Male
+capital-gain <= 2000.00 -> capital-loss <= 900.00 -> sex_Male
+native-country_United-States -> sex_Male
+capital-loss <= 900.00 -> native-country_United-States -> sex_Male
+capital-loss <= 900.00 -> sex_Male
+workclass_Private
+income_<=50K -> workclass_Private
+race_White -> income_<=50K -> workclass_Private
+race_White -> income_<=50K -> native-country_United-States -> workclass_Private
+income_<=50K -> native-country_United-States -> race_White -> capital-gain <= 2000.00 -> workclass_Private
+income_<=50K -> native-country_United-States -> capital-gain <= 2000.00 -> race_White -> capital-loss <= 900.00 -> workclass_Private
+income_<=50K -> native-country_United-States -> race_White -> capital-loss <= 900.00 -> workclass_Private
+race_White -> income_<=50K -> workclass_Private -> capital-gain <= 2000.00
+income_<=50K -> race_White -> capital-gain <= 2000.00 -> capital-loss <= 900.00 -> workclass_Private
+race_White -> income_<=50K -> capital-loss <= 900.00 -> workclass_Private
+income_<=50K -> native-country_United-States -> workclass_Private
+capital-gain <= 2000.00 -> income_<=50K -> native-country_United-States -> workclass_Private
+income_<=50K -> native-country_United-States -> capital-gain <= 2000.00 -> capital-loss <= 900.00 -> workclass_Private
+income_<=50K -> native-country_United-States -> workclass_Private -> capital-loss <= 900.00
+capital-gain <= 2000.00 -> income_<=50K -> workclass_Private
+capital-gain <= 2000.00 -> income_<=50K -> capital-loss <= 900.00 -> workclass_Private
+income_<=50K -> capital-loss <= 900.00 -> workclass_Private
+race_White -> workclass_Private
+race_White -> workclass_Private -> capital-gain <= 2000.00
+race_White -> native-country_United-States -> workclass_Private -> capital-gain <= 2000.00
+native-country_United-States -> race_White -> capital-gain <= 2000.00 -> capital-loss <= 900.00 -> workclass_Private
+race_White -> capital-loss <= 900.00 -> workclass_Private -> capital-gain <= 2000.00
+race_White -> native-country_United-States -> workclass_Private
+race_White -> native-country_United-States -> workclass_Private -> capital-loss <= 900.00
+race_White -> capital-loss <= 900.00 -> workclass_Private
+native-country_United-States -> workclass_Private
+capital-gain <= 2000.00 -> native-country_United-States -> workclass_Private
+capital-gain <= 2000.00 -> native-country_United-States -> workclass_Private -> capital-loss <= 900.00
+native-country_United-States -> workclass_Private -> capital-loss <= 900.00
+capital-gain <= 2000.00 -> workclass_Private
+capital-gain <= 2000.00 -> capital-loss <= 900.00 -> workclass_Private
+capital-loss <= 900.00 -> workclass_Private
+income_<=50K
+race_White -> income_<=50K
+race_White -> income_<=50K -> native-country_United-States
+race_White -> income_<=50K -> native-country_United-States -> capital-gain <= 2000.00
+income_<=50K -> native-country_United-States -> race_White -> capital-gain <= 2000.00 -> capital-loss <= 900.00
+race_White -> income_<=50K -> native-country_United-States -> capital-loss <= 900.00
+race_White -> income_<=50K -> capital-gain <= 2000.00
+race_White -> income_<=50K -> capital-loss <= 900.00 -> capital-gain <= 2000.00
+race_White -> income_<=50K -> capital-loss <= 900.00
+income_<=50K -> native-country_United-States
+capital-gain <= 2000.00 -> income_<=50K -> native-country_United-States
+capital-gain <= 2000.00 -> income_<=50K -> native-country_United-States -> capital-loss <= 900.00
+income_<=50K -> native-country_United-States -> capital-loss <= 900.00
+capital-gain <= 2000.00 -> income_<=50K
+capital-gain <= 2000.00 -> income_<=50K -> capital-loss <= 900.00
+income_<=50K -> capital-loss <= 900.00
+race_White
+race_White -> capital-gain <= 2000.00
+race_White -> native-country_United-States -> capital-gain <= 2000.00
+race_White -> native-country_United-States -> capital-gain <= 2000.00 -> capital-loss <= 900.00
+race_White -> capital-loss <= 900.00 -> capital-gain <= 2000.00
+race_White -> native-country_United-States
+race_White -> native-country_United-States -> capital-loss <= 900.00
+race_White -> capital-loss <= 900.00
+native-country_United-States
+capital-gain <= 2000.00 -> native-country_United-States
+capital-gain <= 2000.00 -> native-country_United-States -> capital-loss <= 900.00
+native-country_United-States -> capital-loss <= 900.00
+capital-gain <= 2000.00
+capital-gain <= 2000.00 -> capital-loss <= 900.00
+capital-loss <= 900.00

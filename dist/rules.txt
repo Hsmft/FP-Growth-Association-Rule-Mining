@@ -1,0 +1,6 @@
+(relationship_Husband) -> (marital-status_Married-civ-spouse)
+(relationship_Husband, marital-status_Married-civ-spouse) -> (sex_Male)
+(relationship_Husband, sex_Male) -> (marital-status_Married-civ-spouse)
+(relationship_Husband) -> (marital-status_Married-civ-spouse, sex_Male)
+(marital-status_Married-civ-spouse, sex_Male) -> (relationship_Husband)
+(relationship_Husband) -> (sex_Male)
